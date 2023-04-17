@@ -175,10 +175,11 @@ header .fa-bars{
         display: flex;
         align-items: center;
         min-height: 100vh;
-        background:url(/images/home-bg.jpg) no-repeat;
+        background:url('https://as2.ftcdn.net/v2/jpg/05/66/56/49/1000_F_566564923_9dSUwu3THAqMWJwr0jlbwjhIwkO7aI6O.jpg') no-repeat;
         background-size: cover;
         background-position: center;
     }
+
     
     .home .content{
         max-width: 50rem;
