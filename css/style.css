@@ -171,11 +171,12 @@ header .fa-bars{
         }
     }
     /* Home content */
+  
     .home{
         display: flex;
         align-items: center;
         min-height: 100vh;
-        background:url('https://as2.ftcdn.net/v2/jpg/05/66/56/49/1000_F_566564923_9dSUwu3THAqMWJwr0jlbwjhIwkO7aI6O.jpg') no-repeat;
+        background:url('https://i.pinimg.com/736x/19/5b/b5/195bb5b7f973134e7b5529f4ac314ac7.jpg') no-repeat;
         background-size: cover;
         background-position: center;
     }
@@ -284,29 +285,8 @@ header .fa-bars{
 }
 
   
-   .products .box-container .box .discount{
-    flex: 30rem;
-    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
-    border-radius: .5rem;
-    border: .1rem solid rgba(0,0,0,.1);
-    
-   }
-
-  
-
-   .products .box-container .box .discount{
-    position:absolute;
-    top: 1rem; left: 1rem;
-    padding: .7rem 1rem;
-    font-size: 2rem;
-    color: var(--pink);
-    background: rgba(235, 53, 144, 0.05);
-    z-index: 1;
-    border-radius: .5rem;
-   }
 
    /*reframing some images */
-   /* wow, I made alot of products 0_0 */
    .products .box-container .box .image {
         position: relative;
         text-align: center;
@@ -329,29 +309,6 @@ header .fa-bars{
     display: flex;
 }
 
-.products .box-container .box:hover .image .icons{
-    bottom:0;
-
-}
-
-.products .box-container .box .image .icons a{
-    height: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    width: 50%;
-    background:var(--pink);
-    color:white;
-}
-
-.products .box-container .box .image .icons .cart-btn{
-    border-left: .1rem solid gray;
-    border-right: .1rem solid gray;
-    width: 100%;
-}
-
-.products .box-container .box .image .icons a{
-    background: black;
-}
 
 .products .box-container .box .content{
     padding: 2rem;
@@ -360,7 +317,7 @@ header .fa-bars{
 
 .products .box-container .box .content h3{
     font-size: 2.5rem;
-    color: gray;
+    color: black;
 }
 
 .products .box-container .box .content .price{
@@ -370,12 +327,7 @@ header .fa-bars{
     padding-top: 1rem;
 }
 
-.products .box-container .box .content span{
-    font-size: 1.5rem;
-    color:grey;
-    font-weight: lighter;
-    text-decoration: line-through;
-}
+
 
 
 /* review section */
@@ -412,11 +364,11 @@ header .fa-bars{
   }
   
   .review-header {
-    display: flex;
-    justify-content: space-between;
+    display:flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 10px;
-    color:#e84393
+    color:#e84393;
   }
   
   .review-header h3 {
@@ -437,37 +389,89 @@ header .fa-bars{
 
   .thumbs{
 color:#e84393;
+
   }
   
 
 /* contact section */
-  .review {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    margin:20px;
-    
+ 
+.contact .row{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    align-items: center;
     
 }
 
-.contact{
-    display:flex;
-    flex-wrap: wrap;
+.contact .row form{
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    background: #ffffff;
+    border-radius: .5rem;
+}
+
+
+.contact .row .image{
+    flex: 1 1 40rem;
+}
+
+.contact .row img{
+    width: 100%;
+}
+
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: gray;
+    text-transform: none;
+    border: .1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%;
+}
+
+.contact .row form .box-focus{
+    border-color: var(--pink);
+}
+
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+    
+}
+
+/* Footer section */
+
+.footer .box-container{
+    display: flex;
+    flex-wrap:wrap;
     gap: 1.5rem;
 }
 
-.box-container .box{
-    display:flex;
+.footer .box-container .box{
+    flex: 1 1  25rem;
 }
 
-.section {
-    margin-bottom: 30px;
-    border: 1px solid #ddd;
-    padding: 20px;
-    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
-    border-radius: .5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 14px;
-    color: #e84393;
-    font-weight: bold;
+.footer .box-container .box h3{
+    color: black;
+    font-size: 2.5rem; 
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: black;
+    color:gray;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--pink);
+    text-decoration: underline;
+}
+
+.footer .box-container .box img{
+    margin-top: 1rem;
     
 }
